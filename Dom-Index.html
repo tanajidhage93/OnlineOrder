@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Dom-Index.css" />
+    <!-- This link is for ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="dis">
+            <span>Ice-Cream</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRWHtCB9wpVLVygU45mTnYCB9qbpneX9sGPQ&s" alt="icecream" />
+            <span>&#x20B9; 80</span>
+        </div>
+
+        <div class="dis">
+            <span>Pizza</span>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/94/0a/7c/yaaayyyy.jpg?w=600&h=-1&s=1" alt="pizza" />
+            <span>&#x20B9; 250</span>
+        </div>
+
+        <div class="dis">
+            <span>Paneer-Tika</span>
+            <img src="https://i.ytimg.com/vi/ShjPAIGBeps/maxresdefault.jpg" alt="paneer" />
+            <span>&#x20B9; 320</span>
+        </div>
+
+        <div class="dis">
+            <span>Sweet-Box</span>
+            <img src="https://www.hyderabadonlineflorists.com/images/SWCNUHA215_big.webp" alt="sweet" />
+            <span>&#x20B9; 500</span>
+        </div>
+    </div>
+
+    <div id="sec">
+        <h3>Product Details</h2>
+            <div>
+                <span>Select Item: </span>
+                <select name="items" id="items" class="border border-2 border-black rounded-3">
+          <option value="">-- Select Product Item --</option>
+          <option value="Ice-Cream">Ice-Cream</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Paneer-Tika">Paneer-Tike</option>
+          <option value="Sweet-Box">Sweet-Box</option>
+        </select>
+            </div>
+
+            <div>
+                <label for="">Enter Quantity: </label>
+                <input type="number" name="qty" id="qty" class="border border-2 border-black rounded-3" /><br />
+            </div>
+
+            <div>
+                <label for="">Price Per-Item: </label>
+                <input type="text" name="price" id="price" readonly class="border border-2 border-black rounded-3" /><br />
+            </div>
+
+            <button onclick="order()" class="btn btn-primary w-75">See Bill</button>
+            <button onclick="bill()" class="btn btn-warning w-75">Order Now</button>
+
+            <div>
+                <output id="op"></output>
+            </div>
+    </div>
+    <script src="Dom-Index.js"></script>
+</body>
+
+</html>
